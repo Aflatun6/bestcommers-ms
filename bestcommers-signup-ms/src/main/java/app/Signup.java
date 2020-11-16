@@ -6,8 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class App {
+public class Signup {
+
     public static void main(String[] args) {
-        SpringApplication.run(App.class);
+        SpringApplication.run(Signup.class);
     }
+
 }
