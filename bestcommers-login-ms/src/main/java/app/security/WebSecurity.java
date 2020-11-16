@@ -33,6 +33,8 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
                 .addFilter(getAuthenticationFilter())
                 .authorizeRequests()
                 .antMatchers(HttpMethod.POST, env.getProperty("login.url.path")).permitAll()
+                .antMatchers(env.getProperty("status.check.url")).permitAll()
+                .anyRequest().authenticated()
                 .and()
                 .headers().frameOptions().disable()
                 .and()

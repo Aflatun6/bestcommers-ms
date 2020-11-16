@@ -23,6 +23,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .addFilter(new AuthorizationFilter(authenticationManager(), env))
                 .authorizeRequests()
                 .antMatchers(env.getProperty("api.h2console.url")).permitAll()
                 .antMatchers(HttpMethod.POST, env.getProperty("api.signup.url")).permitAll()
