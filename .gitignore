@@ -1,0 +1,5 @@
+# Project exclude paths
+/bestcommers-eureka-server-ms/target/
+/bestcommers-login-ms/target/
+/bestcommers-signup-ms/target/
+/bestcommers-zuul-gateway-ms/target/

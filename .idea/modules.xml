@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bestcommers-eureka-server-ms/bestcommers-eureka-server-ms.iml" filepath="$PROJECT_DIR$/bestcommers-eureka-server-ms/bestcommers-eureka-server-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bestcommers-login-ms/bestcommers-login-ms.iml" filepath="$PROJECT_DIR$/bestcommers-login-ms/bestcommers-login-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bestcommers-ms.iml" filepath="$PROJECT_DIR$/.idea/bestcommers-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bestcommers-signup-ms/bestcommers-signup-ms.iml" filepath="$PROJECT_DIR$/bestcommers-signup-ms/bestcommers-signup-ms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bestcommers-zuul-gateway-ms/bestcommers-zuul-gateway-ms.iml" filepath="$PROJECT_DIR$/bestcommers-zuul-gateway-ms/bestcommers-zuul-gateway-ms.iml" />
+    </modules>
+  </component>
+</project>

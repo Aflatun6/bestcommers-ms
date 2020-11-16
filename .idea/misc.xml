@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/bestcommers-eureka-server-ms/pom.xml" />
+        <option value="$PROJECT_DIR$/bestcommers-login-ms/pom.xml" />
+        <option value="$PROJECT_DIR$/bestcommers-signup-ms/pom.xml" />
+        <option value="$PROJECT_DIR$/bestcommers-zuul-gateway-ms/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
