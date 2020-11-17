@@ -41,7 +41,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        UserEntity userEntity = userRepository.findByEmail(email);
+        UserEntity userEntity = userRepository.findByEmail(email); // HERE WE WILL NO LONGER ASK A REPOSITORY FOR INFO, INSTEAD WE WILL PRODUCE A MESSAGE TO THE RABBITMQ BROKER AND THE SIGNUP SERVICE WILL CONSUME THE MESSAGE AND GIVE US INFO.
         if (userEntity == null) throw new UsernameNotFoundException(email);
         return new User(userEntity.getEmail(), userEntity.getEncryptedPassword(), true, true, true, true, new ArrayList<>());
     }
