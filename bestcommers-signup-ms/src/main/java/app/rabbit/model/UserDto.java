@@ -1,36 +1,20 @@
-package app.data.model;
+package app.rabbit.model;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name = "merchants")
-public class UserEntity {
+import java.io.Serializable;
 
-    @Id
-    @GeneratedValue
-    private long id;
+public class UserDto implements Serializable {
 
-    @Column(unique = true, nullable = false)
+    private final static long serialVersionUid = -95645645645168516L;
+
     private String merchantId;
     private String merchantType;
     private String merchantName;
     private String ownerName;
     private String address;
     private String phoneNumber;
-
-    @Column(unique = true, nullable = false)
     private String email;
-
-    @Column(unique = true, nullable = false)
     private String encryptedPassword;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getMerchantId() {
         return merchantId;
